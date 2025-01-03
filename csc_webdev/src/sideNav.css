@@ -1,0 +1,108 @@
+
+
+.sidenav.active{
+    left:0;
+}
+.hamburger{
+    font-size: 3rem;
+    z-index: 999;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    top: 2rem;
+    left: 2rem;
+    position: fixed;
+}
+.homeMenu a{
+    margin-top: 20px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 14px 15px;
+    border-radius: 6px;
+    transition: all 0.5s;
+    
+}
+hr{
+    margin-top: 20px;
+}
+.homeMenu a:hover,
+.homeMenu a.active{
+    background-color: #171717;
+}
+ul{
+    margin-top: 20px;
+    list-style: none;
+    
+}
+.sub{
+    
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 6px;
+    transition: all 0.5s;
+    list-style-type: square;
+}   
+.sub:hover{
+    background-color: #525252;
+}
+.sub a{
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    text-decoration: none !important;
+    
+}
+
+
+.submenu-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 14px 15px;
+    transition: all 0.5s;
+    border-radius: 6px;
+    margin-top:20px;
+    
+
+}
+
+.submenu-toggle:hover{
+    background-color: #525252;
+}
+.arrow-icon{
+    transition: transform 0.3s ease;
+    font-size: 20px;
+    margin-left: auto;
+    
+}
+.arrow-icon.rotate{
+    transform: rotate(180deg);
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .sidenav {
+      left: -240px;
+    }
+    .sidenav.active {
+      left: 0;
+    }
+  }

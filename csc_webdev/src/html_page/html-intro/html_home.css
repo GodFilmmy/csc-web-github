@@ -1,0 +1,82 @@
+main{
+    font-size: 18px;
+}
+.explain-li{
+    list-style:disc;
+}
+.explain-ul{
+    margin: 10px;
+}
+
+
+
+.code-explain-small{
+    display: inline; 
+    vertical-align: middle;
+    border-radius: 6px;
+    
+
+}
+
+.explain-list{
+    padding: 20px;
+}
+.explain-li{
+    padding: 20px;
+}
+
+@media (max-width: 820px) {
+    pre.code-explain-small{
+        display:block;
+       
+    }
+    
+}
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+    pre.code-explain-small{
+        display:block;
+    }
+
+}
+
+.code_container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 6px;
+    
+}
+
+.code_text {
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    background-color: #09c67a;
+    border-radius: 6px 6px 0 0;
+    
+}
+
+.code_Section{
+    margin: 0px;
+    border-radius: 0 0 6px 6px;
+    
+}
+.codeDemo{
+    
+    border-radius: 0 0 6px 6px;
+    
+}
+
+.code-explain-p {
+    display: inline;
+    border-radius: 6px;
+    padding: 0;
+    vertical-align: middle;
+    
+}
+.explain-with-Smallcode{
+    line-height: 3;
+}
+
+

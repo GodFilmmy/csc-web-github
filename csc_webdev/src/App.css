@@ -1,0 +1,78 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+/* App Container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height for the app */
+  }
+ 
+  
+  /* Content */
+  .content {
+    margin-top: 100px;
+    flex-grow: 1;
+    margin-left: 0; /* Default for mobile */
+    padding: 60px;
+    transition: margin-left 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .content {
+      margin-left: 240px; /* Offset content for sidebar in desktop */
+    }
+
+    
+  }
+/* Side Navigation */
+.sidenav {
+    text-decoration: none;
+    width: 240px;
+    background-color: #383838;
+    color: white;
+    height: calc(100vh - 70px); /* Full height minus the header */
+    padding: 20px;
+    position: fixed;
+    top: 106px; /* Position below the header */
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .content{
+      padding: 27px;
+    }
+    .sidenav {
+      transform: translateX(-100%); /* Hidden off-screen */
+    }
+    
+    
+  
+    .sidenav.active {
+      transform: translateX(0); /* Slide in when toggled */
+    }
+  }
+  
+  /* Sidebar for Desktop */
+  @media (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+    .sidenav {
+      transform: translateX(0); /* Always visible on desktop */
+    }
+  }
+
+  
