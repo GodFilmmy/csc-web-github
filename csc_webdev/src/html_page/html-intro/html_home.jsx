@@ -67,7 +67,7 @@ function HtmlHome(){
        <br></br>
 
 
-       <h2>WHAT IS AN HTML ELEMENT</h2>
+       <h2>WHAT IS AN HTML ELEMENT bruh</h2>
        <br></br>
        <p>An HTML element is defined by a start tag, some content, and an end tag</p>
        <img width="85%"src="https://media.geeksforgeeks.org/wp-content/uploads/20231211172217/Group-3-2.jpg"></img>
