@@ -1,12 +1,12 @@
 {
-  "homepage": "https://GodFilmmy.github.io/csc-web-github/",
+  "homepage": "https://godfilmmy.github.io/csc-web-github/",
   "name": "csc_webdev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -14,6 +14,8 @@
   },
   
   "dependencies": {
+
+    "gh": "^2.8.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
