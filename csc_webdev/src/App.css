@@ -53,10 +53,13 @@
   @media (max-width: 768px) {
     .content{
       padding: 20px;
+      margin-top: 130px;
     }
     .sidenav {
+      top: 105px;
       transform: translateX(-100%); /* Hidden off-screen */
     }
+    
     
     
     
