@@ -1,6 +1,7 @@
 import "./html_ad.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nord } from "react-syntax-highlighter/dist/esm/styles/prism";
+import {bigCode_customStyle, smallCode_customStyle }from "../../custom_import/ShowingCode_custom";
 
 
 
@@ -51,7 +52,7 @@ function HtmlAd(){
         <h2>The href Attribute</h2>
        <br></br>
        <div className="explain-with-Smallcode">
-        The <SyntaxHighlighter className="code-explain-p">{`<a></a>`}</SyntaxHighlighter>  tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+        The <SyntaxHighlighter style={smallCode_customStyle} className="code-explain-p">{`<a></a>`}</SyntaxHighlighter>  tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
        </div>
         <br></br>
        <div className="code_container1">
@@ -71,8 +72,8 @@ function HtmlAd(){
         <h2>The src Attribute</h2>
        <br></br>
        <div className="explain-with-Smallcode">
-        The <SyntaxHighlighter className="code-explain-p">{`<img>`}</SyntaxHighlighter> used to embed the image where
-        <SyntaxHighlighter className="code-explain-p">{`src`}</SyntaxHighlighter> tells us the path to the image to display
+        The <SyntaxHighlighter style={smallCode_customStyle} className="code-explain-p">{`<img>`}</SyntaxHighlighter> used to embed the image where
+        <SyntaxHighlighter style={smallCode_customStyle} className="code-explain-p">{`src`}</SyntaxHighlighter> tells us the path to the image to display
        </div>
         <br></br>
        <div className="code_container1">

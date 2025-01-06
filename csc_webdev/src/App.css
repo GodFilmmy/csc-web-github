@@ -52,11 +52,12 @@
   /* Mobile */
   @media (max-width: 768px) {
     .content{
-      padding: 27px;
+      padding: 20px;
     }
     .sidenav {
       transform: translateX(-100%); /* Hidden off-screen */
     }
+    
     
     
   
