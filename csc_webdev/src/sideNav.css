@@ -4,12 +4,12 @@
     left:0;
 }
 .hamburger{
-    font-size: 3rem;
+    font-size: 1.5rem;
     z-index: 999;
     cursor: pointer;
     position: absolute;
     color: white;
-    top: 2rem;
+    top: 1.5rem;
     left: 2rem;
     position: fixed;
 }

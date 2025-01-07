@@ -22,4 +22,13 @@ header{
         
     }
 }
+/*mobile*/
+@media (max-width: 768px){
+    header{
+        font-size: 1rem;
+    }
+    .Headertop{
+        font-size: 1.5rem;
+    }
+}
 
