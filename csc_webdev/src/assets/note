@@ -7,3 +7,44 @@
                 <li className="explain-li"></li>
             </ul>
 </div>
+
+
+
+const codeExample = [
+    {
+      id: 1,
+      title: "CSS exmaple",
+      code: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <style>
+                    body {
+                        background-color: blue;
+                    }
+
+                    h1 {
+                        color: white;
+                        text-align:center;
+                    }
+
+                    p {
+                        color: white;
+                        font-family:verdana;
+                        font-size:20px;
+                        font-style:italic;
+                    } 
+        </style>
+
+      </head>
+
+      <body>
+            <h1>Hello</h1>
+            <p>bbbbbb</p>
+      </body>
+
+      </html>
+      
+      `,
+    },
+  ];

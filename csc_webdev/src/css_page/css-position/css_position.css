@@ -1,4 +1,48 @@
-.catex{
-    position:relative;
+.po-ex-box{
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+   overflow: hidden;
+   position: relative;
     
+}
+.cat1-po{
+    width: 140px;
+}
+.po-ex-con{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cat2-po{
+    width: 140px;
+    position: relative;
+    top: 190px;
+    
+}
+.cat3-po{
+    width: 140px;
+    position: relative;
+    left: 90px;
+
+}
+
+.be-af{
+    text-align: center;
+}
+
+.cat4-fix{
+    position: fixed;
+    top: 180px;
+    z-index: 1000;
+    left: 80%;
+    top: 30%;
+}
+
+@media (max-width:768px) {
+    .cat4-fix{
+        left: 60%;
+    }
 }
