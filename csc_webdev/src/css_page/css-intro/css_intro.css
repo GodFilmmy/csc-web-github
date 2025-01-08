@@ -1,0 +1,33 @@
+.css-result{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+}
+.cssre-topic{
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    background-color: #09c67a;
+    border-radius: 6px 6px 0 0;
+}
+.cssintrore-re{
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 0 0 6px 6px;
+
+    
+}
+
+.cssintrore-re h1{
+    color: white;
+    text-align:center;
+}
+.cssintrore-re p{
+    color: white;
+    font-family:verdana;
+    font-size:20px;
+    font-style: italic;
+}

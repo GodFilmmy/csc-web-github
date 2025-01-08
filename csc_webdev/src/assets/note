@@ -1,0 +1,9 @@
+<div className="explain-list">
+            <ul className="explain-ul">
+                <li className="explain-li"></li>
+                <li className="explain-li"></li>
+                <li className="explain-li"></li>
+                <li className="explain-li"></li>
+                <li className="explain-li"></li>
+            </ul>
+</div>

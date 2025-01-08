@@ -4,8 +4,6 @@ import { nord } from "react-syntax-highlighter/dist/esm/styles/prism";
 import {bigCode_customStyle, smallCode_customStyle }from "../../custom_import/ShowingCode_custom";
 
 
-
-
 const codeExample_Ad =[
     {
         id:1,
@@ -15,10 +13,8 @@ const codeExample_Ad =[
 ]
 
 function HtmlAd(){
+    
     const ex1_Ad = codeExample_Ad[0];
-    const underlineStyle = {
-       color: 'blue'
-    }
     return(
     <main>
 
@@ -32,15 +28,12 @@ function HtmlAd(){
         
         
         <div className="explain-list">
-       
-          <ul className="explain-ul">
-          <li className="explain-li">All HTML elements can have attributes</li>
-          <li className="explain-li">Attributes provide <b>additional information</b> about elements</li>
-          <li className="explain-li">Attributes are always specified in the start tag</li>
-          <li className="explain-li">Attributes usually come in <b>name/value pairs</b> like: name="value"</li>
-          
-          
-          </ul>
+            <ul className="explain-ul">
+                <li className="explain-li">All HTML elements can have attributes</li>
+                <li className="explain-li">Attributes provide <b>additional information</b> about elements</li>
+                <li className="explain-li">Attributes are always specified in the start tag</li>
+                <li className="explain-li">Attributes usually come in <b>name/value pairs</b> like: name="value"</li>
+            </ul>
         </div>
         
         
@@ -84,10 +77,29 @@ function HtmlAd(){
             </div>
         </div>
         <br></br>
-        
+        <div className="junwon-pic-con">
+            <img
+            className="jungwon-pic1"
+            width="250px"
+            src="https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/oYCiBCPBEh56EGWBoxGBfgM2QIBiAAIoAuazIQ~tplv-tej9nj120t-origin.webp"
+            alt="jungwon"
+            />
+            <img
+            className="jungwon-pic1"
+            width="250px"
+            src="https://pbs.twimg.com/media/FBfwplQVEAIen4J.jpg"
+            alt="jungwon"
+            />
+            <img
+            className="jungwon-pic1"
+            width="250px"
+            src="https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/ootENBHDDhAQCAgm6DJFEUEgICCf2AeArQDa1G~tplv-tej9nj120t-origin.webp"
+            alt="jungwon"
+            />
+        </div>
         
     </div>   
-
+    
         </main>
     );
 }

@@ -1,5 +1,5 @@
 *{
-    
+   
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,6 +9,7 @@
 
 /* App Container */
 .app-container {
+
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full height for the app */
@@ -19,7 +20,7 @@
   .content {
     margin-top: 100px;
     flex-grow: 1;
-    margin-left: 0; /* Default for mobile */
+    margin-left: 0; 
     padding: 60px;
     transition: margin-left 0.3s ease-in-out;
     overflow-y: auto;
@@ -67,7 +68,7 @@
     
   
     .sidenav.active {
-      transform: translateX(0); /* Slide in when toggled */
+      transform: translateX(0); 
     }
   }
   

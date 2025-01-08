@@ -8,7 +8,8 @@ import SideNav from "./SideNav";
 import Hamburger from "hamburger-react";
 import HtmlAd from "./html_page/html-ad/html_ad";
 import NextBtn from "./next-btn";
-
+import Css_position from "./css_page/css-position/css_position";
+import Css_intro from "./css_page/css-intro/css_intro";
 import "./App.css";
 
 function App() {
@@ -46,12 +47,16 @@ function App() {
               <Route path="/" element={<HomeContent />} />
               <Route path="/html" element={<HtmlHome />} />
               <Route path="/html/Ad" element={<HtmlAd />} />
+              <Route path="/css" element={<Css_intro/>}/>
+              <Route path="/css/Position" element={<Css_position/>}/>
             </Routes>
-            
+            <br></br>
+            <br></br>
+            <NextBtn></NextBtn>
           </div>
         </div>
   
-        <NextBtn></NextBtn>
+      
         <Footer />
       </div>
     </Router>

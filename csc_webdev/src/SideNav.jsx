@@ -64,13 +64,13 @@ function SideNav({ isOpen, toggleSideNav }) {
           {isCSSSubmenuOpen && (
             <ul className="submenu">
               <li className="sub">
-                <Link to="/html" onClick={toggleSideNav}>
+                <Link to="/css" onClick={toggleSideNav}>
                   Introduction
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/tags" onClick={toggleSideNav}>
-                  Tags
+                <Link to="/css/Position" onClick={toggleSideNav}>
+                  Position
                 </Link>
               </li>
               <li className="sub">

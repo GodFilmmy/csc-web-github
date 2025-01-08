@@ -1,1 +1,15 @@
-
+.junwon-pic-con{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.jungwon-pic1{
+    border-radius: 6px;
+}
+@media (max-width: 768px) {
+    .junwon-pic-con{
+        flex-direction: column;
+        
+    }
+}

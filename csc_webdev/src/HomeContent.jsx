@@ -16,7 +16,7 @@ function HomeContent(){
             title="CSS"
             description="Cascading Style Sheets, a style sheet language used for specifying the presentation and styling of a document written in a markup language"
             imgSrc="https://i0.wp.com/www.nextsteptv.com/wp-content/uploads/2017/11/Chinchilla-6.jpg?fit=650%2C325"
-            link="CSSPage.html">
+            link="/css">
             </Section>
             <Section
             id="javascript"
@@ -36,7 +36,7 @@ function Section({id,title,description,imgSrc,link}){
                 <div className="sec-flex-left">
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <button onClick={()=>navigate(link)}>Let's GOOO</button>
+                    <button onClick={()=>navigate(link)} >Let's GOOO</button>
                 </div>
                 <div className="sec-flex-right">
                     <img src={imgSrc} alt={title}/>
