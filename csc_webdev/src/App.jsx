@@ -8,8 +8,18 @@ import SideNav from "./SideNav";
 import Hamburger from "hamburger-react";
 import HtmlAd from "./html_page/html-ad/html_ad";
 import NextBtn from "./next-btn";
-import Css_position from "./css_page/css-position/css_position";
+
+
 import Css_intro from "./css_page/css-intro/css_intro";
+import Css_fournum from "./css_page/css-fournum/css_fournum";
+import Css_position from "./css_page/css-position/css_position";
+import Css_flex from "./css_page/css-flex/css_flex";
+import Css_display from "./css_page/css-display/css_display";
+import Css_maxW from "./css_page/css-maxW/css_maxW";
+import Css_align from "./css_page/css-align/css_align";
+import Css_grid from "./css_page/css-grid/css_grid";
+import Css_overflow from "./css_page/css-overflow/css_overflow";
+
 import "./App.css";
 
 function App() {
@@ -47,8 +57,18 @@ function App() {
               <Route path="/" element={<HomeContent />} />
               <Route path="/html" element={<HtmlHome />} />
               <Route path="/html/Ad" element={<HtmlAd />} />
+             
               <Route path="/css" element={<Css_intro/>}/>
+              <Route path="/css/fournum" element={<Css_fournum/>}/>
               <Route path="/css/Position" element={<Css_position/>}/>
+              <Route path="/css/flex" element={<Css_flex/>}/>
+              <Route path="/css/display" element={<Css_display/>}/>
+              <Route path="/css/max-wid" element={<Css_maxW/>}/>
+              <Route path="/css/align" element={<Css_align/>}/>
+              <Route path="/css/grid" element={<Css_grid/>}/>
+              <Route path="/css/overflow" element={<Css_overflow/>}/>
+              
+            
             </Routes>
             <br></br>
             <br></br>

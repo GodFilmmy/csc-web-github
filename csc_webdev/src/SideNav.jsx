@@ -69,13 +69,43 @@ function SideNav({ isOpen, toggleSideNav }) {
                 </Link>
               </li>
               <li className="sub">
+                <Link to="/css/fournum" onClick={toggleSideNav}>
+                  4 number basic IDK
+                </Link>
+              </li>
+              <li className="sub">
                 <Link to="/css/Position" onClick={toggleSideNav}>
                   Position
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/forms" onClick={toggleSideNav}>
-                  Forms
+                <Link to="/css/flex" onClick={toggleSideNav}>
+                  Flex
+                </Link>
+              </li>
+              <li className="sub">
+                <Link to="/css/display" onClick={toggleSideNav}>
+                  Display
+                </Link>
+              </li>
+              <li className="sub">
+                <Link to="/css/max-wid" onClick={toggleSideNav}>
+                  Max-width
+                </Link>
+              </li>
+              <li className="sub">
+                <Link to="/css/align" onClick={toggleSideNav}>
+                  Align
+                </Link>
+              </li>
+              <li className="sub">
+                <Link to="/css/grid" onClick={toggleSideNav}>
+                  Grid
+                </Link>
+              </li>
+              <li className="sub">
+                <Link to="/css/overflow" onClick={toggleSideNav}>
+                  Overflow
                 </Link>
               </li>
             </ul>

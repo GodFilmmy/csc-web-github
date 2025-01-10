@@ -5,7 +5,12 @@ import { useNavigate ,useLocation } from "react-router-dom";
 function NextBtn() {
     const navigate = useNavigate();
     const location = useLocation();
-    const routes = ["/","/html","/html/Ad","/css","/css/Position"];
+    const routes = ["/","/html","/html/Ad",
+        "/css","/css/fournum","/css/Position","/css/flex","/css/display"
+        ,"/css/max-wid","/css/align","/css/grid","/css/overflow"
+    
+    
+    ];
     const currentIndex = routes.indexOf(location.pathname);
     const goToNextPage = () =>{
         if(currentIndex < routes.length-1){

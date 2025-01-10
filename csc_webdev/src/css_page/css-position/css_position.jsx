@@ -33,17 +33,58 @@ const codeExample = [
       
       `,
     },
+    {
+      id:2,
+      title: "absolute example",
+      code: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <style>
+                .parent{
+                    position: relative;
+                    width: 200px;
+                    height: 200px;
+                    background-color: #2b83ba;
+                }
+                .child{
+                    position: absolute;
+                    background-color:#ffff9e;
+                    width: 100px;
+                    height: 100px;
+                    top: 90px;
+                    left: -20px;
+                    
+                }
+        </style>
+
+      </head>
+
+      <body>
+            <div class="parent">
+              <div class=""child></div>
+            </div>
+      </body>
+
+      </html>
+
+      `
+    }
   ];
 
 
 function Css_position(){
     const rela_code = codeExample[0];
+    const ab_code = codeExample[1];
     return(
         <main>
             <h1 className="topic">CSS POSITION</h1>
             <hr></hr>
             <br></br>
             <p>The position property specifies the type of positioning method used for an element.</p>
+            <img className="sticker-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq2ogSUrjhVy1HCBPBNO0lPEW2MEp2Xpe1zg&s"/>
+            <img className="sticker-2" src="https://i.imgflip.com/4/7twy7n.png"/>
+            
             <br></br>
             <p>There are <b>5</b> types of position</p>
         <div className="explain-list">
@@ -136,7 +177,7 @@ function Css_position(){
                 <img className="cat3-po" src="https://stickershop.line-scdn.net/stickershop/v1/product/26513215/LINEStorePC/main.png?v=1"/>
                 
                 </div>
-            </div>
+              </div>
 
 
             </div>
@@ -161,11 +202,76 @@ function Css_position(){
             <br></br>
             <hr></hr>
             <br></br>
-            <div className="absolute-po"><h2>Absolute position</h2></div>
+            <div className="absolute-po">
+              <h2>Absolute position</h2>  
+              <ul className="explain-ul">
+                    <li className="explain-li">Means positioning an elements relative to the nearest <b>relative, absolute or fixed</b> parent</li>
+                    <li className="explain-li">If there is no such parents, it will positioned relative to html viewport</li>
+              </ul>
+              <SyntaxHighlighter language="CSS" style={nord} className="codeDemo1">
+                {`position: absolute;`}
+              </SyntaxHighlighter>
+              
+              <br></br>
+                <h3 className="be-af">Before</h3>
+                <br></br>
+                <div className="po-ex-con">
+                    <div className="po-ex-ab-be">
+                    <div className="po-ex-ab-be-c"></div>
+                    
+                    </div>
+                </div>
+                <br></br>
+                <div className="code_container">
+                  <div className="code_text">{ab_code.title}</div>
+        <div className="code_Section">
+          <SyntaxHighlighter
+            language="html"
+            style={bigCode_customStyle}
+            className="codeDemo"
+          >
+            {ab_code.code}
+          </SyntaxHighlighter>
+        </div>
+        <br></br>
+        <h3 className="be-af">After</h3>
+        <br></br>
+        <div className="po-ex-con">
+                    <div className="po-ex-ab-af">
+                    <div className="po-ex-ab-af-c"></div>
+                    
+                    </div>
+                </div>
+            <br></br>
+            <br></br>
+            <p>This means the yellow one is top 90 px and -20px left from the blue one</p>
+
+      </div>
+                
+            </div>
             <br></br>
             <hr></hr>
             <br></br>
-            <div className="sticky-po"><h2>Sticky position</h2></div>
+            <div className="sticky-po">
+              <h2>Sticky position</h2>
+              <ul className="explain-ul">
+                    <li className="explain-li">Positioned based on the user's scroll position</li>
+                    <li className="explain-li">toggles between <b>relative</b> and <b>fixed</b>, depending on the scroll position</li>
+                    <li className="explain-li">It is positioned relative unitl a given offset position is met in the viewport then stick fixed in the place</li>
+                    <li className="explain-li">You must specify at least one of top left right bottom ffor sticky position</li>
+              </ul>
+              <SyntaxHighlighter language="CSS" style={nord} className="codeDemo1">
+                {`position: sticky;`}
+              </SyntaxHighlighter>
+              <br></br>
+              <h3>For exmaple: When you see this text, scroll down and up! </h3>
+              <br></br>
+              <h3 className="st-ex">HUH</h3>
+              <br></br>
+              <div className="blank-st">
+                <img className="blank-car" src="https://i.redd.it/img24gu05lfb1.jpg"/>
+              </div>
+              </div>
 
         </main>
     )
