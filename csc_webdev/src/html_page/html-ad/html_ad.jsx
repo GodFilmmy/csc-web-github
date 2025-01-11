@@ -81,7 +81,7 @@ function HtmlAd(){
             <img
             className="jungwon-pic1"
             width="250px"
-            src="https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/oYCiBCPBEh56EGWBoxGBfgM2QIBiAAIoAuazIQ~tplv-tej9nj120t-origin.webp"
+            src="https://i.pinimg.com/736x/3d/c1/8a/3dc18aadde8968ce95f4e55d88e6ed76.jpg"
             alt="jungwon"
             />
             <img

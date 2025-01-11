@@ -92,7 +92,7 @@ function Css_display(){
                 {`display: inline;`}
               </SyntaxHighlighter>
               
-              <div className="explain-list">
+        <div className="explain-list">
             <ul className="explain-ul">
                 <li className="explain-li">Displayed inline elements</li>
                 <li className="explain-li">Does not start the new line and only takes up as much as necessary</li>

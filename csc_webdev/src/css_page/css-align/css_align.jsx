@@ -109,10 +109,10 @@ function Css_align(){
         <div className="cssali-re">
         <div className="re-ali-box-self-af1">
           <div className="re-ali-item-self-af1">
-            <img width="100px" src="https://media.tenor.com/1KSuQJCaddIAAAAM/monkeycat.gif"/>
+            <img width="100px" src="https://i.pinimg.com/736x/55/38/d9/5538d9f01a49374c148bb03126aa8fec.jpg"/>
           </div>
           <div className="re-ali-item-self-af2">
-            <img width="100px" src="https://media.tenor.com/1KSuQJCaddIAAAAM/monkeycat.gif"/>
+            <img width="100px" src="https://i.pinimg.com/736x/56/85/c1/5685c112e5ffaf2f5853dd1316c81367.jpg"/>
           </div>
         </div>
         </div>
