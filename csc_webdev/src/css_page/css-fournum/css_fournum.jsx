@@ -6,38 +6,10 @@ import { nord } from "react-syntax-highlighter/dist/esm/styles/prism";
 const codeExample = [
     {
       id: 1,
-      title: "CSS exmaple",
+      title: "Padding properties exmaple",
       code: `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <style>
-                    body {
-                        background-color: blue;
-                    }
-
-                    h1 {
-                        color: white;
-                        text-align:center;
-                    }
-
-                    p {
-                        color: white;
-                        font-family:verdana;
-                        font-size:20px;
-                        font-style:italic;
-                    } 
-        </style>
-
-      </head>
-
-      <body>
-            <h1>Hello</h1>
-            <p>bbbbbb</p>
-      </body>
-
-      </html>
-      
+        padding: 10px 100px 70px 30px;
+        margin: 10px 60px 50px 20px;
       `,
     },
   ];
@@ -46,11 +18,16 @@ function Css_fournum(){
     const codeCssintroEx1 = codeExample[0];
     return (
         <main>
-            <h1 className="topic">CSS INTRODUCTION ddd</h1>
+            <h1 className="topic">Basic box model</h1>
             <hr></hr>
             <br></br>
-            <p><b>CSS stands for Cascading Style Sheets</b> ,it use to describes how HTML elements are to be displayed on screen, paper, or in other media</p>
-
+            <p>Each box has a content area (e.g., text, an image, etc.) and optional surrounding padding, border, and margin areas; the size of each area is specified by properties defined below. The following diagram shows how these areas relate and the terminology used to refer to pieces of margin, border, and padding:</p>
+           <br></br>
+           <div className="box-model-con">
+            <div className="box-model-pic">
+              <img className="box-model-pic1"src="https://www.w3.org/TR/CSS2/images/boxdim.png"/>
+            </div>
+            </div>   
 
         <div className="code_container">
         <div className="code_text">{codeCssintroEx1.title}</div>
@@ -65,16 +42,17 @@ function Css_fournum(){
         </div>
       </div>
       <br></br>
-      
+      <h3 className="be-af">top-right-bottom-left</h3>
+      <h3 className="be-af">CLOCK WISE !!</h3>
+
       <div className="css-result">
-        <div className="cssre-topic">
-            RESULT
+        <div className="css4-re-box">
+        <div className="css4-itembox-pad">
+          <div className="css4-item-pad">content</div>
         </div>
-        <div className="cssintrore-re">
-        <h1>Hello</h1>
-        <p>bbbbbb</p>
         </div>
-      </div>
+        </div>
+      
         </main>
     )
 }

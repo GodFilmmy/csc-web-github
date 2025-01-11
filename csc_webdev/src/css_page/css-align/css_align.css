@@ -1,0 +1,96 @@
+.align-pic1-box{
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+@media (max-width: 768px) {
+    .align-pic1{
+        width:70%;
+        
+    }
+}
+
+.cssali-re{
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 6px 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.re-ali-box-be{
+    border: 2px dotted black;
+    width: 100%;
+    height: 300px;
+
+}
+.re-ali-box-af1{
+    border: 2px dotted black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.re-ali-box-af2{
+    border: 2px dotted black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.re-ali-box-self-af1{
+    border: 2px dotted black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.re-ali-item-self-af2{
+    align-self: flex-end;
+}
+
+.re-ali-box-sb-af1{
+    border: 2px dotted black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:space-around;
+    
+    
+
+}
+
+.re-ali-box-sa-af1{
+    border: 2px dotted black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:space-around;
+    
+
+}
+
+.re-ali-box-se-af1{
+    border: 2px dotted black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+
+
+

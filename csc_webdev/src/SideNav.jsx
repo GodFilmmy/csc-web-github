@@ -70,7 +70,7 @@ function SideNav({ isOpen, toggleSideNav }) {
               </li>
               <li className="sub">
                 <Link to="/css/fournum" onClick={toggleSideNav}>
-                  4 number basic IDK
+                  Basic box model
                 </Link>
               </li>
               <li className="sub">

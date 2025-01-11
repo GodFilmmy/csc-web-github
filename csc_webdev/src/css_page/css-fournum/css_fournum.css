@@ -1,0 +1,35 @@
+.box-model-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.css4-re-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 6px 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.css4-itembox-pad{
+    width: 60%;
+    height: 200px;
+    background-color: rgb(255, 154, 154);
+}
+.css4-item-pad{
+    padding: 10px 100px 70px 30px;
+    margin: 10px 60px 50px 20px;
+    
+    
+    
+    background-color: rgb(203, 221, 255);
+}
+@media (max-width:768px) {
+    .box-model-pic1{
+        width: 330px;
+    }
+
+
+}
