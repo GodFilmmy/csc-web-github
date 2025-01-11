@@ -46,35 +46,87 @@ function Css_display(){
     const codeCssintroEx1 = codeExample[0];
     return (
         <main>
-            <h1 className="topic">CSS INTRODUCTION d</h1>
+            <h1 className="topic">Display</h1>
             <hr></hr>
-            <br></br>
-            <p><b>CSS stands for Cascading Style Sheets</b> ,it use to describes how HTML elements are to be displayed on screen, paper, or in other media</p>
+            
+            <div className="explain-list">
+            <ul className="explain-ul">
+                <li className="explain-li">It controls the flow and layout of elements.</li>
+                <li className="explain-li">It determines whether an element acts as a block, inline, flex container, grid container, or other display types</li>
+              
+           </ul>
+        </div>  
+        
 
 
-        <div className="code_container">
-        <div className="code_text">{codeCssintroEx1.title}</div>
-        <div className="code_Section">
-          <SyntaxHighlighter
-            language="html"
-            style={bigCode_customStyle}
-            className="codeDemo"
-          >
-            {codeCssintroEx1.code}
-          </SyntaxHighlighter>
+         <hr></hr>
+         <br></br>
+         <h3 className="be-af">-Please decrease the window size to see how it works-</h3>
+         <br></br>
+         <h2>Block</h2>
+         <br></br>
+         <p>It starts on a new line and takes up the full width available by default.</p>
+        <br></br>
+         <SyntaxHighlighter language="CSS" style={nord} className="codeDemo1">
+                {`display: block;`}
+              </SyntaxHighlighter>
+              <br></br>      
+          <div className="display-box-ex">
+            HAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            <div className="block-ex">
+              Blockkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+            </div>
+            HAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </div>
+          <br></br>
+          <hr></hr>
+          <br></br>
+          <h2>inline</h2>
+          <br></br>
+          <p>It starts on a new line and takes up the full width available by default.</p>
+          <br></br>
+          <SyntaxHighlighter language="CSS" style={nord} className="codeDemo1">
+                {`display: inline;`}
+              </SyntaxHighlighter>
+              
+              <div className="explain-list">
+            <ul className="explain-ul">
+                <li className="explain-li">Displayed inline elements</li>
+                <li className="explain-li">Does not start the new line and only takes up as much as necessary</li>
+              
+           </ul>
+        </div>  
+
+        <div className="display-box-ex">
+            HAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            <div className="inline-ex">
+              <b>inline</b>
+            </div>
+            HAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </div>
+          <br></br>
+          <hr></hr>
+          <br></br>
+          <h2>inline-block</h2>
+          <div className="explain-list">
+            <ul className="explain-ul">
+                <li className="explain-li">Combine <b>block</b> and <b>inline</b></li>
+                <li className="explain-li">It behaves like an inline element but allows setting width and height like a block element.</li>
+              
+           </ul>
         </div>
-      </div>
-      <br></br>
-      
-      <div className="css-result">
-        <div className="cssre-topic">
-            RESULT
-        </div>
-        <div className="cssintrore-re">
-        <h1>Hello</h1>
-        <p>bbbbbb</p>
-        </div>
-      </div>
+
+        <SyntaxHighlighter language="CSS" style={nord} className="codeDemo1">
+                {`display: inline-block;`}
+              </SyntaxHighlighter>
+<br></br>
+        <div className="display-box-ex">
+            HAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            <div className="inline-block-ex">
+              <b>inline</b>
+            </div>
+            HAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </div>
         </main>
     )
 }

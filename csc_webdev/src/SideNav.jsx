@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { RiArrowDropDownLine } from "@react-icons/all-files/ri/RiArrowDropDownLine";
 import { Link } from "react-router-dom";
-import { FaCat } from "@react-icons/all-files/fa/FaCat";
-
 import "./SideNav.css";
 
 function SideNav({ isOpen, toggleSideNav }) {
@@ -10,45 +8,42 @@ function SideNav({ isOpen, toggleSideNav }) {
   const [isCSSSubmenuOpen, setIsCSSSubmenuOpen] = useState(false);
   const [isJsSubmenuOpen, setIsJssubmenuOpen] = useState(false);
 
-  const toggleHtmlSubmenu = () => {
-    setIsHtmlSubmenuOpen(!isHtmlSubmenuOpen);
+  const toggleHtmlSubmenu = () => setIsHtmlSubmenuOpen(!isHtmlSubmenuOpen);
+  const toggleCSSSubmenu = () => setIsCSSSubmenuOpen(!isCSSSubmenuOpen);
+  const toggleJsSubmenu = () => setIsJssubmenuOpen(!isJsSubmenuOpen);
+
+  const handleLinkClick = () => {
+    toggleSideNav();
+    window.scrollTo({top: 0}); // Scroll to the top
   };
-  const toggleCSSSubmenu = () =>{
-    setIsCSSSubmenuOpen(!isCSSSubmenuOpen);
-  }
-  const toggleJsSubmenu = () => {
-    setIsJssubmenuOpen(!isJsSubmenuOpen);
-  }
 
   return (
     <div className={`sidenav ${isOpen ? "active" : ""}`}>
       <div className="homeMenu">
-    
-        
-        <Link to="/" onClick={toggleSideNav}>
-        Home
+        <Link to="/" onClick={handleLinkClick}>
+          Home
         </Link>
       </div>
       <hr></hr>
       <ul>
         <li className="topic-nav">
           <button onClick={toggleHtmlSubmenu} className="submenu-toggle">
-            HTML <RiArrowDropDownLine className={`arrow-icon ${isHtmlSubmenuOpen ? "rotate" : ""}`}/>
+            HTML <RiArrowDropDownLine className={`arrow-icon ${isHtmlSubmenuOpen ? "rotate" : ""}`} />
           </button>
           {isHtmlSubmenuOpen && (
             <ul className="submenu">
               <li className="sub">
-                <Link to="/html" onClick={toggleSideNav} >
+                <Link to="/html" onClick={handleLinkClick}>
                   Introduction
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/Ad" onClick={toggleSideNav}>
-                Attributes
+                <Link to="/html/Ad" onClick={handleLinkClick}>
+                  Attributes
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/forms" onClick={toggleSideNav}>
+                <Link to="/html/forms" onClick={handleLinkClick}>
                   Forms
                 </Link>
               </li>
@@ -56,55 +51,54 @@ function SideNav({ isOpen, toggleSideNav }) {
           )}
         </li>
 
-
         <li className="topic-nav">
           <button onClick={toggleCSSSubmenu} className="submenu-toggle">
-            CSS <RiArrowDropDownLine className={`arrow-icon ${isCSSSubmenuOpen ? "rotate" : ""}`}/>
+            CSS <RiArrowDropDownLine className={`arrow-icon ${isCSSSubmenuOpen ? "rotate" : ""}`} />
           </button>
           {isCSSSubmenuOpen && (
             <ul className="submenu">
               <li className="sub">
-                <Link to="/css" onClick={toggleSideNav}>
+                <Link to="/css" onClick={handleLinkClick}>
                   Introduction
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/fournum" onClick={toggleSideNav}>
+                <Link to="/css/fournum" onClick={handleLinkClick}>
                   Basic box model
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/Position" onClick={toggleSideNav}>
+                <Link to="/css/Position" onClick={handleLinkClick}>
                   Position
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/flex" onClick={toggleSideNav}>
+                <Link to="/css/flex" onClick={handleLinkClick}>
                   Flex
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/display" onClick={toggleSideNav}>
+                <Link to="/css/display" onClick={handleLinkClick}>
                   Display
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/max-wid" onClick={toggleSideNav}>
+                <Link to="/css/max-wid" onClick={handleLinkClick}>
                   Max-width
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/align" onClick={toggleSideNav}>
+                <Link to="/css/align" onClick={handleLinkClick}>
                   Align
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/grid" onClick={toggleSideNav}>
+                <Link to="/css/grid" onClick={handleLinkClick}>
                   Grid
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/css/overflow" onClick={toggleSideNav}>
+                <Link to="/css/overflow" onClick={handleLinkClick}>
                   Overflow
                 </Link>
               </li>
@@ -113,30 +107,29 @@ function SideNav({ isOpen, toggleSideNav }) {
         </li>
 
         <li className="topic-nav">
-          <button  onClick={toggleJsSubmenu} className="submenu-toggle">
-            JAVASCRIPT <RiArrowDropDownLine className={`arrow-icon ${isJsSubmenuOpen ? "rotate" : ""}`}/>
+          <button onClick={toggleJsSubmenu} className="submenu-toggle">
+            JAVASCRIPT <RiArrowDropDownLine className={`arrow-icon ${isJsSubmenuOpen ? "rotate" : ""}`} />
           </button>
           {isJsSubmenuOpen && (
             <ul className="submenu">
               <li className="sub">
-                <Link to="/html" onClick={toggleSideNav}>
+                <Link to="/html" onClick={handleLinkClick}>
                   Introduction
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/tags" onClick={toggleSideNav}>
+                <Link to="/html/tags" onClick={handleLinkClick}>
                   Tags
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/forms" onClick={toggleSideNav}>
+                <Link to="/html/forms" onClick={handleLinkClick}>
                   Forms
                 </Link>
               </li>
             </ul>
           )}
         </li>
-
       </ul>
     </div>
   );

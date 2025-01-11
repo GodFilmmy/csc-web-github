@@ -12,10 +12,18 @@ const codeExample = [
         margin: 10px 60px 50px 20px;
       `,
     },
+    {
+      id: 2,
+      title: "Border properties exmaple",
+      code: `
+        border-radius: 3px 10px 30px 0;
+      `,
+    },
   ];
 
 function Css_fournum(){
-    const codeCssintroEx1 = codeExample[0];
+    const codeCssBoxEx1 = codeExample[0];
+    const codeCssBoxEx2 = codeExample[1];
     return (
         <main>
             <h1 className="topic">Basic box model</h1>
@@ -30,14 +38,14 @@ function Css_fournum(){
             </div>   
 
         <div className="code_container">
-        <div className="code_text">{codeCssintroEx1.title}</div>
+        <div className="code_text">{codeCssBoxEx1.title}</div>
         <div className="code_Section">
           <SyntaxHighlighter
             language="html"
             style={bigCode_customStyle}
             className="codeDemo"
           >
-            {codeCssintroEx1.code}
+            {codeCssBoxEx1.code}
           </SyntaxHighlighter>
         </div>
       </div>
@@ -52,7 +60,30 @@ function Css_fournum(){
         </div>
         </div>
         </div>
-      
+        <br></br>
+
+        <div className="code_container">
+        <div className="code_text">{codeCssBoxEx2.title}</div>
+        <div className="code_Section">
+          <SyntaxHighlighter
+            language="html"
+            style={bigCode_customStyle}
+            className="codeDemo"
+          >
+            {codeCssBoxEx2.code}
+          </SyntaxHighlighter>
+        </div>
+      </div>
+      <h3 className="be-af">top left - top right - bottom right - bottom left</h3>
+      <h3 className="be-af">clock wise but start from top left</h3>
+
+      <div className="css-result">
+        <div className="css4-re-box">
+          
+            <div className="border-ex"></div>
+         
+        </div>
+        </div>
         </main>
     )
 }

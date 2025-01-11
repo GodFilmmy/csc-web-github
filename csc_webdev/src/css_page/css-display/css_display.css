@@ -1,0 +1,15 @@
+.block-ex{
+    display:block;
+}
+
+.inline-ex{
+    display: inline;
+}
+
+.display-box-ex{
+    
+    overflow: auto;
+}
+.inline-block-ex{
+    display: inline-block;
+}
