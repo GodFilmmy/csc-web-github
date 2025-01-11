@@ -82,6 +82,9 @@ function Css_display(){
           <hr></hr>
           <br></br>
           <h2>inline</h2>
+          <div className="display-sitcker">
+            <img className="display-sitcker1" src="https://i.pinimg.com/736x/e9/d5/da/e9d5da217d71d69d209ea94e1ce121df.jpg"/>
+          </div>
           <br></br>
           <p>It starts on a new line and takes up the full width available by default.</p>
           <br></br>
