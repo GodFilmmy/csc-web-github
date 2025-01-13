@@ -113,18 +113,18 @@ function SideNav({ isOpen, toggleSideNav }) {
           {isJsSubmenuOpen && (
             <ul className="submenu">
               <li className="sub">
-                <Link to="/html" onClick={handleLinkClick}>
+                <Link to="/js" onClick={handleLinkClick}>
                   Introduction
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/tags" onClick={handleLinkClick}>
-                  Tags
+                <Link to="/js/dataType" onClick={handleLinkClick}>
+                  Data Types
                 </Link>
               </li>
               <li className="sub">
-                <Link to="/html/forms" onClick={handleLinkClick}>
-                  Forms
+                <Link to="/js/opera" onClick={handleLinkClick}>
+                  Operators
                 </Link>
               </li>
             </ul>

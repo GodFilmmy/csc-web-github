@@ -7,7 +7,10 @@ function NextBtn() {
     const location = useLocation();
     const routes = ["/","/html","/html/Ad",
         "/css","/css/fournum","/css/Position","/css/flex","/css/display"
-        ,"/css/max-wid","/css/align","/css/grid","/css/overflow"
+        ,"/css/max-wid","/css/align","/css/grid","/css/overflow",
+        "/js","/js/dataType","/js/opera",
+        
+        
     
     
     ];

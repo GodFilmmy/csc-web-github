@@ -20,6 +20,10 @@ import Css_align from "./css_page/css-align/css_align";
 import Css_grid from "./css_page/css-grid/css_grid";
 import Css_overflow from "./css_page/css-overflow/css_overflow";
 
+import Js_intro from "./js_page/js-intro/js_intro";
+import Js_dataType from "./js_page/js-datatyype/js_dataType";
+import Js_opera from "./js_page/js-opera/js_opera";
+
 import "./App.css";
 
 function App() {
@@ -55,6 +59,7 @@ function App() {
             {isSideNavOpen && <div className="overlay" onClick={closeSideNav}></div>}
             <Routes>
               <Route path="/" element={<HomeContent />} />
+
               <Route path="/html" element={<HtmlHome />} />
               <Route path="/html/Ad" element={<HtmlAd />} />
              
@@ -68,6 +73,9 @@ function App() {
               <Route path="/css/grid" element={<Css_grid/>}/>
               <Route path="/css/overflow" element={<Css_overflow/>}/>
               
+              <Route path="/js" element={<Js_intro/>}/>
+              <Route path="/js/dataType" element={<Js_dataType/>}/>
+              <Route path="/js/opera" element={<Js_opera/>}/>
             
             </Routes>
             <br></br>

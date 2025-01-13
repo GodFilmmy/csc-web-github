@@ -23,20 +23,24 @@ function HomeContent(){
             title="JAVASCRIPT"
             description="Scripting Language, enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else."
             imgSrc="https://m.media-amazon.com/images/I/51V+1wd2dFL.jpg"
-            link="javascriptPage.html">
+            link="/js">
             </Section>
         </main>
     )
 }
 function Section({id,title,description,imgSrc,link}){
     const navigate = useNavigate();
+    const windowNavigate = (link) =>{
+        window.scrollTo(0,0);
+        navigate(link);
+    }
     return(
         <section id={id}>
             <div className="sectionFlexBox">
                 <div className="sec-flex-left">
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <button onClick={()=>navigate(link)} >Let's GOOO</button>
+                    <button onClick={()=>windowNavigate(link)} >Let's GOOO</button>
                 </div>
                 <div className="sec-flex-right">
                     <img src={imgSrc} alt={title}/>

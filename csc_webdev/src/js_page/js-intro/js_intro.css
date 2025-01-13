@@ -1,0 +1,9 @@
+.js_jungbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.js_jungintropic{
+    max-width: 50%;
+}
