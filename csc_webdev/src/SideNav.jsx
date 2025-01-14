@@ -102,6 +102,11 @@ function SideNav({ isOpen, toggleSideNav }) {
                   Overflow
                 </Link>
               </li>
+              <li className="sub">
+                <Link to="/css/unit" onClick={handleLinkClick}>
+                  Unit
+                </Link>
+              </li>
             </ul>
           )}
         </li>

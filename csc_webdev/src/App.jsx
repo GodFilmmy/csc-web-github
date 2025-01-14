@@ -19,6 +19,7 @@ import Css_maxW from "./css_page/css-maxW/css_maxW";
 import Css_align from "./css_page/css-align/css_align";
 import Css_grid from "./css_page/css-grid/css_grid";
 import Css_overflow from "./css_page/css-overflow/css_overflow";
+import Css_unit from "./css_page/css-unit/css_unit";
 
 import Js_intro from "./js_page/js-intro/js_intro";
 import Js_dataType from "./js_page/js-datatyype/js_dataType";
@@ -73,6 +74,7 @@ function App() {
               <Route path="/css/align" element={<Css_align/>}/>
               <Route path="/css/grid" element={<Css_grid/>}/>
               <Route path="/css/overflow" element={<Css_overflow/>}/>
+              <Route path="/css/unit" element={<Css_unit/>}/>
               
               <Route path="/js" element={<Js_intro/>}/>
               <Route path="/js/dataType" element={<Js_dataType/>}/>

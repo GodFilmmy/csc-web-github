@@ -82,4 +82,26 @@
     }
   }
 
+
+  table{
+    
+    width: 100%;
+    margin: 25px auto 20px;
+    border-collapse: collapse;
+  }
   
+  td, th{
+    border: 1px solid rgb(124, 124, 124);
+    padding: 15px;
+    
+  }
+
+  .table-header th{
+    border: 1px solid #353535; 
+    background-color:#353535;
+    color: white;
+  }
+
+  tr:nth-child(odd){
+    background-color:#eaeaea ;
+  }
