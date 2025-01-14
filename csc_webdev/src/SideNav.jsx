@@ -127,6 +127,11 @@ function SideNav({ isOpen, toggleSideNav }) {
                   Operators
                 </Link>
               </li>
+              <li className="sub">
+                <Link to="/js/controlS" onClick={handleLinkClick}>
+                  Control Structure
+                </Link>
+              </li>
             </ul>
           )}
         </li>

@@ -1,0 +1,58 @@
+.js_test_box{
+    font-size: 18px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 6px;
+   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.js_test_btn{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    
+}
+
+.js_result{
+    
+    display: inline-block;
+    margin-top: 10px;
+    padding:16px;
+    border-radius: 6px;
+    
+    
+    
+}
+
+.js_result-btn{
+    padding: 6px 9px;
+    margin: 2px;
+    font-size: 20px;
+    background-color:#318CE7;
+    color:white;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.js_clear-btn{
+    padding: 6px 9px;
+    margin: 2px;
+    font-size: 20px;
+    background-color:#EF0107;
+    color:white;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.js_result-btn:hover{
+    background-color:#2a7ccf;
+
+}
+
+.js_clear-btn:hover{
+    background-color:#fe3138;
+    
+}

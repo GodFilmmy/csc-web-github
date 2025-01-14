@@ -23,6 +23,7 @@ import Css_overflow from "./css_page/css-overflow/css_overflow";
 import Js_intro from "./js_page/js-intro/js_intro";
 import Js_dataType from "./js_page/js-datatyype/js_dataType";
 import Js_opera from "./js_page/js-opera/js_opera";
+import Js_controlS from "./js_page/js-controlStruc/js_controlS";
 
 import "./App.css";
 
@@ -76,6 +77,7 @@ function App() {
               <Route path="/js" element={<Js_intro/>}/>
               <Route path="/js/dataType" element={<Js_dataType/>}/>
               <Route path="/js/opera" element={<Js_opera/>}/>
+              <Route path="/js/controlS" element={<Js_controlS/>}/>
             
             </Routes>
             <br></br>
