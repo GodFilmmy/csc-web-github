@@ -27,7 +27,23 @@ function Js_controlS(){
             id:2,
             title: "Loops",
             code: `
-            www
+            let ans = 0;
+            for(let i = 0 ; i<5 ; i++){
+                ans+=i;
+            }
+
+            let j = 0;
+            while(j<5){
+                ans+=j;
+                j++;
+            }
+            
+            let k = 0;
+            do{
+                ans+=k;
+                k++
+            }while(k<5)
+            
             `
         }
    
@@ -42,12 +58,18 @@ function Js_controlS(){
         setIfResult(score >= 50 ? "You passed!!" : "You failed ");
     }
     const handleLoop = () =>{
+        let ans = 0;
         for(let i = 0 ; i<5 ;i++){
-            setloopResult(i);
+            ans+=i;
         }
+        setloopResult(ans);
     }
     const handelIfClear = () =>{
         setIfResult("");
+    }
+    
+    const handleLoopClear = () =>{
+        setloopResult("");
     }
     return(
         <main>
@@ -79,8 +101,32 @@ function Js_controlS(){
             <p>Result: {Ifresult}</p>
         </div>
       </div>
-      
-        
+      <br></br>
+      <hr></hr>
+      <br></br>
+      <h3>2. Loop</h3>
+      <div className="code_container">
+        <div className="code_text">{codeEx_loop.title}</div>
+        <div className="code_Section">
+          <SyntaxHighlighter
+            language="html"
+            style={bigCode_customStyle}
+            className="codeDemo"
+          >
+            {codeEx_loop.code}
+          </SyntaxHighlighter>
+        </div>
+      </div>
+      <div className="js_test_box">
+        <div className="js_test_btn">
+        <button className="js_result-btn" onClick={handleLoop}>Click me</button>
+        <button className="js_clear-btn" onClick={handleLoopClear}>Clear</button>
+        </div>
+       
+        <div className="js_result">
+            <p>Result: {loopresult}</p>
+        </div>
+      </div>
         </main>
     );
 }   
