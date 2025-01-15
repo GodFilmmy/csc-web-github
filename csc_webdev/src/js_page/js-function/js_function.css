@@ -1,0 +1,21 @@
+.oper_img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.oper-sun{
+    max-width: 50%;
+}
+.fun-jung-box{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.func-jungpic{
+    width: 50%;
+}

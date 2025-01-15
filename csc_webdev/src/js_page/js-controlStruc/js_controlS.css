@@ -20,6 +20,9 @@
     margin-top: 10px;
     padding:16px;
     border-radius: 6px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
     
     
     
@@ -55,4 +58,14 @@
 .js_clear-btn:hover{
     background-color:#fe3138;
     
+}
+
+.js_test_input{
+    margin: 0 0 20px;
+}
+
+.js_test_input_box{
+    margin-top: 13px;
+    padding: 10px;
+    width: 100%;
 }

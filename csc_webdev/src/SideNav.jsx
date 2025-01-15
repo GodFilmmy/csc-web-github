@@ -137,6 +137,11 @@ function SideNav({ isOpen, toggleSideNav }) {
                   Control Structure
                 </Link>
               </li>
+              <li className="sub">
+                <Link to="/js/function" onClick={handleLinkClick}>
+                  Function
+                </Link>
+              </li>
             </ul>
           )}
         </li>
