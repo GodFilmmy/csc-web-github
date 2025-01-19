@@ -142,6 +142,16 @@ function SideNav({ isOpen, toggleSideNav }) {
                   Function
                 </Link>
               </li>
+              <li className="sub">
+                <Link to="/js/array" onClick={handleLinkClick}>
+                  Array
+                </Link>
+              </li>
+              <li className="sub">
+                <Link to="/js/object" onClick={handleLinkClick}>
+                  Object
+                </Link>
+              </li>
             </ul>
           )}
         </li>
