@@ -1,0 +1,10 @@
+.eventListenBtn-box-alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-test-alert{
+    width:60%;
+    padding: 10px;
+}

@@ -9,7 +9,7 @@ function NextBtn() {
         "/css","/css/fournum","/css/Position","/css/flex","/css/display"
         ,"/css/max-wid","/css/align","/css/grid","/css/overflow","/css/unit",
         "/js","/js/dataType","/js/opera","/js/controlS","/js/function","/js/array"
-        ,"/js/object",
+        ,"/js/object","/js/dom","/js/event",
         
         
     

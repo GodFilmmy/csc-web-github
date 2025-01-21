@@ -31,7 +31,7 @@ export const smallCode_customStyle = {
       tabSize: 4,
       hyphens: "none",
       padding: "0.3em 0.7em",
-      margin: "0 0.3em 0.7em",
+      margin: "0 0.3em 0.5em",
       overflow: "auto",
     },
   };

@@ -1,11 +1,10 @@
-.oper_img-box{
+.dom-pic-box{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-
 }
 
-.oper-sun{
-    max-width: 50%;
+.dom-pic{
+    width: 70%;
 }

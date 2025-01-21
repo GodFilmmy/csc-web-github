@@ -19,6 +19,8 @@ import Js_controlS from "./js_page/js-controlStruc/js_controlS";
 import Js_function from "./js_page/js-function/js_function";
 import Js_array from "./js_page/js-array/js_array";
 import Js_object from "./js_page/js-object/js_object";
+import Js_dom from "./js_page/js-dom/js_dom";
+import Js_event from "./js_page/js-event/js_event";
 
 const appRoutes = [ { path: "/", element: <HomeContent /> },
 { path: "/html", element: <HtmlHome /> },
@@ -40,6 +42,8 @@ const appRoutes = [ { path: "/", element: <HomeContent /> },
 { path: "/js/function", element: <Js_function /> },
 { path: "/js/array", element: <Js_array /> },
 { path: "/js/object", element: <Js_object /> },
+{ path: "/js/dom", element: <Js_dom /> },
+{ path: "/js/event", element: <Js_event /> },
 ];
 
 export default appRoutes;

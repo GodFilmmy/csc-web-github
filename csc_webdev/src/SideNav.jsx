@@ -152,10 +152,21 @@ function SideNav({ isOpen, toggleSideNav }) {
                   Object
                 </Link>
               </li>
+              <li className="sub">
+                <Link to="/js/dom" onClick={handleLinkClick}>
+                  DOM
+                </Link>
+              </li>
+              <li className="sub">
+                <Link to="/js/event" onClick={handleLinkClick}>
+                  Event
+                </Link>
+              </li>
             </ul>
           )}
         </li>
       </ul>
+      <br></br>
     </div>
   );
 }
